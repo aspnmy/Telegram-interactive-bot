@@ -1,3 +1,16 @@
+# 项目说明
+使用 poetry 和 pipx3 组件重新进行包管理的 米哈 双向机器人
+
+# 换包管理器的目的
+- python3 更换了poetry 和 pipx3 主要就是偷懒，及缩小依赖及构建docker后体积更小更稳定，主要因为pipx包隔离技术比较OK
+- Docker中加入S6-overlay作为第一个pid1启动器
+- Docker镜像中加入一个botrun.sh，方便在S6-overlay-docker镜像中可以用命令行交互(Api)的形式运行
+
+# Dockerfile
+
+
+
+
 # Telegram interactive bot (Telegram 双向机器人)
 
 ## 一、简介
