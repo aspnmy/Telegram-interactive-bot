@@ -1,46 +1,33 @@
 #!/bin/bash
-/usr/sbin/sshd -D
-python3 -m interactive-bot
-
-#!/bin/bash
 
 USERNAME="root"
 SCNAME="autoRunBot"
 
 
 ME=`whoami`
-
 if [ $ME != $USERNAME ] ; then
    echo "Please run the $USERNAME user."
    exit
 fi
 
 startBot() {
-
     python3 -m interactive-bot
-
-   exit
+    exit
 }
  
 start_ssh() {
-
     /usr/sbin/sshd -D
-
-   exit
+    exit
 }
 
 end_ssh() {
-
     killall -SIGTERM sshd
-
-   exit
+    exit
 }
 
 kill_ssh() {
-
     killall -SIGKILL sshd
-
-   exit
+    exit
 }
 
 case "$1" in
