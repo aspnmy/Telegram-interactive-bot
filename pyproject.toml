@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "interactive-bot-poetry"
-version = "0.1.0"
+name = "Telegram-interactive-bot"
+version = "1.0.0"
 description = "使用 poetry 和 pipx3 组件重新进行包管理的 米哈 双向机器人"
 authors = ["aspnmy <support@e2bank.cn>"]
 readme = "README.md"
